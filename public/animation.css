@@ -1,0 +1,113 @@
+/* .bubbles img{
+    width: 50px;
+    animation: bubbles 7s linear infinite ;
+    
+} */
+.bubbles div{
+    animation: square 4s linear infinite ;
+}
+.bubbles{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    
+}
+
+@keyframes bubbles{
+    0%{
+        transform:translateY(0);
+        opacity: 0;
+    }
+    50%{
+ 
+        opacity: 1;
+    }
+    70%{
+
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-80vh);
+        opacity: 0;
+    }
+}
+@keyframes square{
+    0%{
+        transform:translateY(0vh);
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    30%{
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    40%{
+        transform: rotate(270deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform:translateY(-100vh);
+        opacity: 0;
+    }
+}
+.squares div:nth-child(1){
+    animation-delay: 2.5s;
+}
+.squares div:nth-child(2){
+
+    animation-delay: 1.8s;
+}
+.squares div:nth-child(3){
+
+    animation-delay: 3.6s;
+}
+.squares div:nth-child(4){
+
+    animation-delay: 4.4s;
+}
+.squares div:nth-child(5){
+
+    animation-delay: 5.2s;
+}
+.squares div:nth-child(6){
+
+    animation-delay: 6.8s;
+}
+.squares div:nth-child(7){
+
+    animation-delay: 7.9s;
+}
+
+
+
+
+.bubbles img:nth-child(1){
+    width: 18px;
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2){
+    width: 20px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    width: 15px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4){
+    width: 25px;
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+    width: 15px;
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(6){
+    width: 25px;
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(7){
+    width: 20px;
+    animation-delay: 7s;
+}
