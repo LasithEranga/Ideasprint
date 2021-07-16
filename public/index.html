@@ -18,50 +18,101 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <script src="https://kit.fontawesome.com/4f128951c5.js" crossorigin="anonymous"></script>
-    <!-- <style>
+    <style>
         /* Gallery style */
-        div#carousel { 
-        perspective: 1200px; 
-        background: #100000; 
-        padding-top: 10%; 
-        font-size:0;  
-        margin-bottom: 3rem; 
-        overflow: hidden; 
+        .gallery_change{
+          
+            animation: change 20s  infinite;
+                    
+            /* -webkit-transition: change 10s ease-in-out;
+            -moz-transition: change 10s ease-in-out;
+            -o-transition: change 10s ease-in-out;
+            transition: change 10s ease-in-out; */
+            
+           
         }
-        figure#spinner { 
-        transform-style: preserve-3d; 
-        height: 300px; 
-        transform-origin: 50% 50% -500px; 
-        transition: 1s; 
-        } 
-        figure#spinner img { 
-        width: 93%; max-width: 425px; 
-        position: absolute; left: 3%;
-        transform-origin: 50% 50% -500px;
-        outline:1px solid transparent; 
+        @keyframes change{
+            0%{
+
+                background-image: url(./images/img10.jpg)
+            }
+            10%{
+            
+                background-image: url(./images/img20.jpg); 
+                
+            }
+
+            20%{
+                
+                
+                background-image: url(./images/img6.jpg); 
+                
+            }
+            30%{
+                
+            
+                background-image: url(./images/img2.jpg); 
+            }
+            40%{
+                
+                
+                background-image: url(./images/img4.jpg); 
+            
+            }
+            50%{
+                
+            
+                background-image: url(./images/img11.jpg); 
+                
+            }
+            60%{
+                
+                
+                background-image: url(./images/img10.jpg); 
+                
+            }
+            70%{
+                
+            
+                background-image: url(./images/img15.jpg); 
+                
+            }
+            80%{
+                
+                
+                background-image: url(./images/img13.jpg); 
+                                
+            }
+            90%{
+                
+            
+                background-image: url(./images/img12.jpg); 
+                
+            }
+            100%{
+                
+                
+                background-image: url(./images/img16.jpg); 
+                
+            }
+            
+
+            
         }
-        figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+        @keyframes xoom{
+            
+            from {
+                
+                width: 0;
+            }
+            to{
+                animation-delay: 100ms;
+                width: 100%;
+            }
         }
-        figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
-        figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
-        figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-        figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
-        figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
-        figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-        figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
-        div#carousel ~ span { 
-        color: #fff; 
-        margin: 5%; 
-        display: inline-block; 
-        text-decoration: none; 
-        font-size: 2rem; 
-        transition: 0.6s color; 
-        position: relative; 
-        margin-top: -6rem; 
-        border-bottom: none; 
-        line-height: 0; }
-        div#carousel ~ span:hover { color: #888; cursor: pointer; }
-    </style> -->
+        
+        
+    </style> 
     
     <style>
         .wrapper{
@@ -556,8 +607,12 @@
                             <div class=" absolute h-screen w-full bg-gradient-to-b from-white to-green-200 top-full flex flex-col items-center justify-center">
                                 <div class="text-5xl w-full text-center font-bold pt-20 " style="font-family: 'Poppins', sans-serif;"> GLIMPSE OF IDEASPRINT</div>
                                 <!-- Start of Gallary section -->
-
-                                    <div class=" flex flex-row w-10/12 h-screen  py-20 pt-20">
+                                    <div class=" h-auto w-full p-5">
+                                        <div class=" h-96 w-full md:hidden rounded-xl shadow-lg  bg-cover bg-center bg-no-repeat gallery_change" >
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="hidden md:flex flex-row w-10/12 h-screen  py-20 pt-20">
                                         <div class=" w-2/5  h-full flex flex-col pr-2 ">
                                             <div class=" w-full bg-blue-300 h-1/2 bg-cover" style="background-image: url(./images/img20.jpg);"></div>
                                             <div class="w-full h-2"></div>
@@ -590,17 +645,17 @@
                                     <!-- End of gallary section -->
                                 <div class=" absolute h-auto w-full bg-gradient-to-b from-green-200 to-white  top-full">
                                     <!-- Start of sponsors section -->
-                                    <div class="h-full flex flex-row items-center justify-center">
-                                        <div class="w-1/6  flex items-center justify-center  lg:py-0">
-                                            <div class="my-7 w-52 h-52 rounded-lg  ml-2 shadow-2xl card-hover flex flex-row py-16  lg:py-0  ">
-                                                <div class="w-full h-full flex items-center justify-center p-5 ">
+                                    <div class="h-full flex flex-col md:flex-row items-center justify-center">
+                                        <div class="md:w-1/6 w-full flex items-center justify-center  lg:py-0 px-20 md:px-0">
+                                            <div class="my-7 w-52  h-52 rounded-lg  ml-2 shadow-2xl card-hover flex flex-row md:py-16  lg:py-0  ">
+                                                <div class="w-full h-full flex items-center justify-center p-10 md:p-5 ">
                                                    <img src="./images/uok.png">
                                                  </div>
                                            
                                             </div>
                                             
                                         </div>
-                                        <div class="w-1/6  flex items-center justify-center  lg:py-0">
+                                        <div class="md:w-1/6 w-full  flex items-center justify-center  lg:py-0">
                                             <div class="my-7 w-52 h-52 rounded-lg  ml-2  shadow-2xl card-hover flex flex-row py-16  lg:py-0  ">
                                                 <div class="w-full h-full flex items-center justify-center ">
                                                    <img src="./images/imssa-300x255.png">
@@ -609,7 +664,7 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="w-1/6   flex items-center justify-center  lg:py-0">
+                                        <div class="md:w-1/6  w-full flex items-center justify-center  lg:py-0">
                                             <div class="my-7 w-52 h-52 rounded-lg  ml-2  shadow-2xl card-hover flex flex-row py-16  lg:py-0  ">
                                                 <div class="w-full h-full flex items-center justify-center p-5">
                                                    <img src="./images/Layer-1-2048x536.png">
@@ -618,7 +673,7 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="w-1/6   flex items-center justify-center  lg:py-0">
+                                        <div class="md:w-1/6 w-full   flex items-center justify-center  lg:py-0">
                                             <div class="my-7 w-52 h-52 rounded-lg  ml-2  shadow-2xl card-hover flex flex-row py-16  lg:py-0  ">
                                                 <div class="w-full h-full flex items-center justify-center p-5 ">
                                                    <img src="./images/Intro Logo.png">
@@ -628,7 +683,7 @@
                                             
                                         </div>
 
-                                        <div class="w-1/6   flex items-center justify-center  lg:py-0">
+                                        <div class="md:w-1/6 w-full  flex items-center justify-center  lg:py-0">
                                             <div class="my-7 w-52 h-52 rounded-lg  ml-2  shadow-2xl card-hover flex flex-row py-16  lg:py-0  ">
                                                 <div class="w-full h-full flex items-center justify-center ">
                                                    <img src="./images/img-20190404-wa0012.jpg">
