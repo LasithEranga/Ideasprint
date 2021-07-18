@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="width=device-width, initial-scale=1.0"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="./style.css">
     <style>
 
       html{
@@ -76,184 +77,28 @@
 .btn-check:checked + .btn-outline-success:focus, .btn-check:active + .btn-outline-success:focus, .btn-outline-success:active:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus {
   box-shadow: 0 0 0 0.25rem rgba(15, 245, 138, 0);
 }
+.button{
+    color: red;
+}
 
     </style>
     
     <title>Document</title>
 </head>
 <body class="">
-    
-    <div class="container box p-4">
-        <form action="" class="needs-validation" novalidate>
-        <div class="mb-3">
-            <label for="" class="form-label">Team name</label>
-            <input name ="teamName" type="text" class="form-control"  required>
-            <div class="invalid-feedback">
-                You must enter a team name before submitting.
-            </div>
-        </div>
+  <div class=" w-full h-screen bg-red-400" id="contain">
 
-        <div class="mb-3">
-            <label for="" class="form-label">Team leader name</label>
-            <input name ="leaderName"type="text" class="form-control" id="1" required>
-            <div class="invalid-feedback">
-                You must enter a name before submitting.
-            </div>
-        </div>
+    <!-- <iframe id="frame1" class=" w-1/2 h-screen" src="https://script.google.com/macros/s/AKfycbygmDCWKaBg15NcXZSf8lgdn00ISPgzSz9Hw1eqAV6UrARvKP4LKigshbtbarfJ3tVb4Q/exec" frameborder="0"></iframe> -->
+<button id='btn' class="btn-outline-success" >sjkdh</button>
 
-        <div class="mb-3">
-            <label for="" class="form-label">Level</label>
-            <select name ="leaderLevel"class="form-select" required>
-                <option value="1"selected>Level 1</option>
-                <option value="2">Level 2</option>
-                <option value="3">Level 3</option>
-                <option value="4">Level 4</option>
-            </select>
-
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Contact Number</label>
-            <input name ="leaderMobile" pattern="^(?:7|0|(?:\+94))[0-9]{9,10}$" maxlength="10" class="form-control" required>
-            <div class="invalid-feedback">
-                You must enter a valid mobile number before submitting.
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Email address</label>
-            <input name="leaderEmail" type="email" class="form-control" id="1" placeholder="name@gmail.com" required>
-            <div class="invalid-feedback">
-                You must enter a valid email address before submitting.
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Member 1 Name</label>
-            <input name="member1Name" type="text" class="form-control" id="1" required>
-            <div class="invalid-feedback">
-                You must enter a name before submitting.
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Level</label>
-            <select name="member1Level" class="form-select" >
-                <option selected>Level 1</option>
-                <option value="2">Level 2</option>
-                <option value="3">Level 3</option>
-                <option value="4">Level 4</option>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </select>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Member 2 Name</label>
-            <input name="member2Name" type="text" class="form-control" id="1" required>
-            <div class="invalid-feedback">
-                You must enter a name before submitting.
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Level</label>
-            <select name="member2Level" class="form-select" >
-                <option selected>Level 1</option>
-                <option value="2">Level 2</option>
-                <option value="3">Level 3</option>
-                <option value="4">Level 4</option>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </select>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Member 3 Name</label>
-            <input name="member3Name"type="text" class="form-control" id="1" required>
-            <div class="invalid-feedback">
-                You must enter a name before submitting.
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Level</label>
-            <select name="member3Level" class="form-select" >
-                <option selected>Level 1</option>
-                <option value="2">Level 2</option>
-                <option value="3">Level 3</option>
-                <option value="4">Level 4</option>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </select>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Member 4 Name</label>
-            <input name="member4Name" type="text" class="form-control" id="1" required>
-            <div class="invalid-feedback">
-                You must enter a name before submitting.
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="" class="form-label">Level</label>
-            <select name="member4Level" class="form-select" >
-                <option selected>Level 1</option>
-                <option value="2">Level 2</option>
-                <option value="3">Level 3</option>
-                <option value="4">Level 4</option>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </select>
-        </div>
-
-
-        <div class="mb-3">
-            <label for="" class="form-label">Idea in brief</label>
-            <textarea required class="form-control" name="" id="" cols="30" rows="1"></textarea>
-            <div class="invalid-feedback">
-                You must enter your idea in brief before submitting.
-            </div>
-        </div>
-
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-outline-success me-md-2" type="button">SUBMIT</button>
-          </div>
-
-      </form>
-    </div> 
-
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   <script>
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+  </div>
+    <script>
+        var bt = document.getElementById('btn');
+        document.getElementById('btn').addEventListener("click", submit);
+        function submit(){
+            bt.classList.replace('btn-outline-success',"button");
         }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-
-   </script>
+    </script>
+ 
 </body>
 </html>
